@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://i.imgur.com/nqNlEOz.jpg');
+      background-size: cover;
+      color: white;
+    }
+    a {
+      color: red;
+    }
+    h1 {
+      font-size: 70px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(2,0,0,0.6);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+        
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/0U7jRo2s.jpg">
+    <h1>Timmy's Blog</h1>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Top Posts</a></li>
+      <li><a href="#">My Vlog</a></li>
+    </ul>
+  </header>
+  <article>
+    <h2>Tutorials and How-to</h2>
+    <p>Tutorials and How-to guides are probably the simplest type of blog post you can work on. They are easy because they involve you talking about things you are already familiar with such as your product or service. The most important thing when it comes to how-to guides is to break down your tutorial into the smallest steps and into the simplest terms. Don’t assume your readers know what they’re doing — this is a tutorial, remember?.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Current Events</h2>
+    <p>News is always happening, from the latest Marvel movie to Russia’s latest antics. The brilliance of writing a post on current events is that people are already looking for more information and thoughts about these subjects. Your opinion post on current events could become the next viral sensation!.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Controversial Subjects</h2>
+    <p>You just need to figure out which controversy interests you, and how you can add to the conversation. Be sure to use the keywords around the controversy too. Mac vs. PC, MailChimp vs AWeber, Gun Control, etc. are just some basic ideas.</p>
+    <button>Like</button>
+  </article>
+  <script>
+    $("button").on("click", function() {
+      alert("Oshey!");
+    });
+  </script>
+</body>
